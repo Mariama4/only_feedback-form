@@ -1,0 +1,11 @@
+.feedback-form {
+    $root: &;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    &__input, &__textarea {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+.input {
+    $root: &;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.error {
+    color: #cc0033;
+    
+    input {
+        background-color: #fce4e4;
+        border: 1px solid #cc0033;
+        outline: none;
+    }
+}
+
+.fill input {
+    background-color: #b0ffd1;
+    border: 1px solid #000000;
+    outline: none;
+}

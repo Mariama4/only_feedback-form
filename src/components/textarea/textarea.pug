@@ -1,0 +1,12 @@
+mixin textarea(props)
+    .textarea(class= props.disabled ? 'disabled' : '')&attributes(attributes)
+        if props.label
+            .textarea__label= `${props.label}${props.required ? ' *' : ''}`
+        textarea(
+            name= props.name || ''
+            placeholder= props.placeholder || false
+            maxlength= props.maxLength || false
+            required= props.required || false
+            disabled= props.disabled || false
+        )
+        .textarea__error

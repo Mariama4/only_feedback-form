@@ -1,0 +1,8 @@
+.textarea {
+    $root: &;
+
+    textarea {
+        min-width: 177px;
+        min-height: 21px;
+    }
+}

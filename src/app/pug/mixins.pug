@@ -1,0 +1,6 @@
+mixin img({ src, alt })
+    img(src=src alt=alt || '')
+
+mixin svg(id)
+    svg
+        use(xlink:href=`#${id}`)

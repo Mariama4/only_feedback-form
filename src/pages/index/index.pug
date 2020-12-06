@@ -1,0 +1,9 @@
+extends ../../app/pug/layout
+include ../../components/feedback-form/feedback-form
+
+block title
+    | Главная
+
+block content
+    main(data-barba="container" data-barba-namespace="index")
+        +feedback-form

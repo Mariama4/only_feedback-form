@@ -1,0 +1,43 @@
+include ../input/input
+include ../textarea/textarea
+
+mixin feedback-form(props)
+    form.feedback-form&attributes(attributes)
+        +input({
+            label: 'Имя',
+            name: 'firstName',
+            placeholder: 'Имя',
+            required: true
+        }).feedback-form__input
+        +input({
+            label: 'Фамилия',
+            name: 'middleName',
+            placeholder: 'Фамилия',
+            required: true
+        }).feedback-form__input
+        +input({
+            label: 'Отчество',
+            name: 'lastName',
+            placeholder: 'Отчество',
+            required: true
+        }).feedback-form__input
+        +input({
+            label: 'Телефон',
+            name: 'phone',
+            type: 'tel',
+            placeholder: 'Телефон',
+            required: true
+        }).feedback-form__input
+        +input({
+            label: 'Email',
+            name: 'email',
+            type: 'email',
+            placeholder: 'Email',
+            required: true
+        }).feedback-form__input
+        +textarea({
+            label: 'Сообщение',
+            name: 'message',
+            placeholder: 'Сообщение...'
+        }).feedback-form__input
+        button.feedback-form__button Отправить

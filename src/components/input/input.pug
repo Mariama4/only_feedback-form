@@ -1,0 +1,12 @@
+mixin input(props)
+    label.input(class= props.disabled ? 'disabled' : '')&attributes(attributes)
+        if props.label
+            .input__label= `${props.label}${props.required ? ' *' : ''}`
+        input(
+            name= props.name || ''
+            type= props.type || 'text'
+            placeholder= props.placeholder || false
+            data-required= props.required || false
+            disabled= props.disabled || false
+        )
+        .input__error
