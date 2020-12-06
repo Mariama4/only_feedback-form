@@ -1,8 +1,21 @@
 .textarea {
     $root: &;
 
+    &__label {
+        font-size: 14px;
+        font-weight: 500;
+
+        text-transform: uppercase;
+        letter-spacing: .0875em;
+        text-align: left;
+    }
+
     textarea {
-        min-width: 177px;
+        min-width: 200px;
         min-height: 21px;
+
+        border-radius: 10px;
+
+        border: 1px solid #000000;
     }
 }

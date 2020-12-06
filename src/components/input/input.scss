@@ -2,6 +2,23 @@
     $root: &;
     display: flex;
     flex-flow: column nowrap;
+
+    input {
+        border-radius: 10px;
+        border: 1px solid #000000;
+
+        width: 200px;
+        height: 21px;
+    }
+
+    &__label {
+        font-size: 14px;
+        font-weight: 500;
+
+        text-transform: uppercase;
+        letter-spacing: .0875em;
+        text-align: left;
+    }
 }
 
 .error {
